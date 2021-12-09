@@ -1,5 +1,5 @@
 # spring-github-login-starter-for-better-reads
-Starter Spring Boot project for OAuth login with GitHub for the Better Reads
+Starter Spring Boot project for OAuth login with GitHub for the Better Reads App
 
 Simple starter for a Spring Boot Web application with GitHub OAuth support.
 
