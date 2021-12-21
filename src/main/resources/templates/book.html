@@ -21,12 +21,12 @@
   </head>
   <body>
     <div class="container">
-      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"  style="padding-bottom: 20px">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light"  style="padding-bottom: 20px">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">Better Reads</a>
         
         </div>
-      </nav> -->
+      </nav>
 
 
       <div th:insert="components/book-search :: search-panel"></div>
@@ -61,12 +61,12 @@
                     <input type="date" class="form-control" id="completeDate" name="completeDate" th:value="${userBooks.completedDate}">
                   </div>
                   <div class="mb-3">
-                    <label for="status" class="form-label">Status</label>
-                    <select id="status" name="status" class="form-select" aria-label="Reading Status" th:field="${userBooks.readingStatus}">
-                      <option selected value="0">Status</option>
-                      <option value="reading">Currently Reading</option>
-                      <option value="finished">Finished</option>
-                      <option value="dnf">Did Not Finish</option>
+                    <label for="readingStatus" class="form-label">Status</label>
+                    <select id="readingStatus" name="readingStatus" class="form-select" aria-label="Reading Status" th:field="${userBooks.readingStatus}">
+                      <option selected value="3">Status</option>
+                      <option value="0-reading">Currently Reading</option>
+                      <option value="2-finished">Finished</option>
+                      <option value="1-dnf">Did Not Finish</option>
                     </select>
                   </div>
                   <div class="mb-3">
